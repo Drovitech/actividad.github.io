@@ -32,7 +32,7 @@ Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics p
 
 Permite generar un gráfico de clics por usuario con matplotlib.
 
-[Ver gráfica](/assets/images/top10_clicks.png)
+[Ver gráfica](https://drive.google.com/file/d/1v5Ua1jlbMa9GnkZPIl34Y675iAJ5k0kg/view?usp=sharing)
 
 ## Interpretación y Conclusiones
 
