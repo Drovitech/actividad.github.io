@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Análisis de Flujo de Datos Simulado con Spark y Jekyll"
 date: 2025-10-29
 categories: analitica spark streaming
