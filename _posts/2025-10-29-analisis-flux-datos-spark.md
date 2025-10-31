@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: default
 title: "Análisis de Flujo de Datos Simulado con Spark y Jekyll"
 date: 2025-10-29
 categories: analitica spark streaming
 author: Alejandro Villoria
 ---
-## 🧠 Introducción
+## Introducción
 
 Para el desarrollo de esta actividad se analiza un flujo de datos simulado de una tienda online que permite registrar los clics de los usuarios en tiempo real.  
 El objetivo es aplicar analítica avanzada con **Apache Spark** para procesar estos datos y detectar patrones de navegación, usando **Python y Jekyll** para documentar el proceso.
