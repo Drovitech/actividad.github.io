@@ -32,6 +32,8 @@ Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics p
 
 Permite generar un gráfico de clics por usuario con matplotlib.
 
+[Ver gráfica](/assets/images/top10_clicks.png)
+
 ## Interpretación y Conclusiones
 
 Se evidencia que algunos usuarios concentran la mayoría de los clics, lo que sugiere que podrían ser clientes frecuentes o bots. Con la ayuda de estos patrones, permiten que la tienda pueda cumplir objetivos concretos, entre ellas se mencionan las siguientes:
