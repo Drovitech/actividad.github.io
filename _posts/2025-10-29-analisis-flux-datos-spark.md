@@ -25,6 +25,7 @@ Se simuló una tienda online que registra clics de usuarios. El sistema recibe d
 ### 2. Carga del Dataset
 Usar un archivo CSV llamado `clickstream_data.csv` con 1000 registros simulados.
 
+```python
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder.appName("ClickStreamAnalysis").getOrCreate()
@@ -33,10 +34,12 @@ df.show(5)
 
 ### 3. Procesamiento con Spark Streaming (simulado)
 Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics por usuario, esto se logra con el siguiente código:
+
 import time
 from pyspark.sql.functions import col
 
 for i in range(0, 10):
+
     window_df = df.filter(col("Timestamp").between(i*60, (i+1)*60))
     summary = window_df.groupBy("User_ID").sum("Clicks")
     summary.show()
@@ -66,13 +69,13 @@ Se evidencia que algunos usuarios concentran la mayoría de los clics, lo que su
 
 **Reflexión:** El procesamiento en *streaming* permite analizar eventos en tiempo real, mientras que el procesamiento por *lotes* analiza grandes volúmenes de datos acumulados después de un periodo.
 
-## Arquitectura y Despliegue del Blog
-
-Este blog está desarrollado con **Jekyll** y el tema **Cayman**.  
-La estructura del proyecto incluye:
-
 ## Cierre y Retroalimentación
 
 Este proyecto incluye herramientas de **Big Data** y visualización en un entorno reproducible.  
 El uso de **Spark Streaming** representa una tendencia esencial en la analítica en tiempo real.  
 Gran trabajo con Spark; el *streaming* es clave en 2025.
+
+## Arquitectura y Despliegue del Blog
+
+Este blog está desarrollado con **Jekyll** y el tema **Cayman**.  
+
