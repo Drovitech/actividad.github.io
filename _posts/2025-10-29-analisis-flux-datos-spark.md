@@ -25,39 +25,13 @@ Se simuló una tienda online que registra clics de usuarios. El sistema recibe d
 ### 2. Carga del Dataset
 Usar un archivo CSV llamado `clickstream_data.csv` con 1000 registros simulados.
 
-```python
-from pyspark.sql import SparkSession
-
-spark = SparkSession.builder.appName("ClickStreamAnalysis").getOrCreate()
-df = spark.read.csv("clickstream_data.csv", header=True, inferSchema=True)
-df.show(5)
-
 ### 3. Procesamiento con Spark Streaming (simulado)
-Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics por usuario, esto se logra con el siguiente código:
-
-import time
-from pyspark.sql.functions import col
-
-for i in range(0, 10):
-
-    window_df = df.filter(col("Timestamp").between(i*60, (i+1)*60))
-    summary = window_df.groupBy("User_ID").sum("Clicks")
-    summary.show()
-    time.sleep(1)
+Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics por usuario.
 
 ### 4. Visualización
 Permite generar un gráfico de clics por usuario con matplotlib:
-import matplotlib.pyplot as plt
-import pandas as pd
 
-data = df.groupBy("User_ID").sum("Clicks").toPandas()
-plt.bar(data["User_ID"], data["sum(Clicks)"])
-plt.xlabel("Usuario")
-plt.ylabel("Total de clics")
-plt.title("Clics por usuario - Análisis de Flujo")
-plt.show()
-
-![Gráfico de clics por usuario](../assets/images/top10_clicks.png)
+![Gráfico de clics por usuario](assets/images/top10_clicks.png)
 
 ## Interpretación y Conclusiones
 
