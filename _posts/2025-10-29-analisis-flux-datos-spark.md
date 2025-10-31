@@ -54,7 +54,7 @@ plt.ylabel("Total de clics")
 plt.title("Clics por usuario - Análisis de Flujo")
 plt.show()
 
-![Gráfico de clics por usuario](/assets/images/top10_clicks.png)
+![Gráfico de clics por usuario](../assets/images/top10_clicks.png)
 
 ## Interpretación y Conclusiones
 
