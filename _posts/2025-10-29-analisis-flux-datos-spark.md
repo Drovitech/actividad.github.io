@@ -29,9 +29,8 @@ Usar un archivo CSV llamado `clickstream_data.csv` con 1000 registros simulados.
 Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics por usuario.
 
 ### 4. Visualización
-Permite generar un gráfico de clics por usuario con matplotlib:
 
-![Gráfico de clics por usuario](/assets/images/top10_clicks.png)
+Permite generar un gráfico de clics por usuario con matplotlib.
 
 ## Interpretación y Conclusiones
 
