@@ -10,6 +10,10 @@ author: Alejandro Villoria
 Para el desarrollo de esta actividad se analiza un flujo de datos simulado de una tienda online que permite registrar los clics de los usuarios en tiempo real.  
 El objetivo es aplicar analítica avanzada con **Apache Spark** para procesar estos datos y detectar patrones de navegación, usando **Python y Jekyll** para documentar el proceso.
 
+NOTA: Se debe descargar el archivo "analysis.ipynb" y abrirlo en Google Colab para su correcta visualización y ver su funcionamiento.
+
+[Descargar analysis.ipynb](https://download1654.mediafire.com/0qdd62x7zkngSLlq7gZmpp442cqW5oXA9zfpRs1rSse_rBLdgB9ngPkRXcZ5yHddNoML0dZMQ6iTvcoDvgCtbPz4nyxP2it1wHwNmb9wSduVhh7-kBImImR9VlFDEXoiBo60v1cs35eFUe0wsXDLr_ggnhA-IsXWF53yV6VkBKtnxg/z6dvelryuqofn4r/analysis.ipynb)
+
 ## Objetivo
 
 Aplicar analítica avanzada para procesar un flujo de datos simulado en un contexto empresarial usando Python y Spark, mostrando los resultados dentro de un blog construido con Jekyll.
@@ -24,6 +28,7 @@ Se simuló una tienda online que registra clics de usuarios. El sistema recibe d
 
 ### 2. Carga del Dataset
 Usar un archivo CSV llamado `clickstream_data.csv` con 1000 registros simulados.
+[Descargar archivo CSV](https://download1582.mediafire.com/rl59pci31s4g6_oVfWZgEZOIQiiOmyc3BJ8d0PCy8qL5Ca8kQdW5MRW8gX-w_9zs-PNqrHE9qGJYDQPJFolBj2q1ZzYI2UcMwdKhxqtj4hOH5DP8qBZdMgtj2lKYSI2E4HVOs-8LVCRi1ChbA1VAPePPSOn6A6-zlposXXs05keJxA/mb6hbphh9yvql24/clickstream.csv)
 
 ### 3. Procesamiento con Spark Streaming (simulado)
 Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics por usuario.
