@@ -8,16 +8,16 @@ Su propósito es analizar un flujo de clics simulados en una tienda online y doc
 ## Estructura del Proyecto
 
 MI_BLOG/
-├── _posts/
-│ └── 2025-10-29-analisis-flux-datos-spark.md
-├── _config.yml
-└── index.md
+   posts/
+     2025-10-29-analisis-flux-datos-spark.md
+   _config.yml
+   index.md
 
 ## NOTA
 
 Los archivos "analysis.ipynb", "clicksteam.csv" se subieron a Mediafire y la gráfica "top 10 usuarios por clics" está en el Drive.
 
-## ⚙️ Análisis con PySpark
+## Análisis con PySpark
 
 El análisis de clics se desarrolló en **Python** utilizando la librería `pyspark` para procesar un dataset con registros simulados de navegación de usuarios.
 
@@ -31,6 +31,7 @@ df = spark.read.csv("clickstream_data.csv", header=True, inferSchema=True)
 df.show(5)
 
 ### **2. Procesamiento en Ventanas (Streaming simulado)**
+
 ```python
 import time
 from pyspark.sql.functions import col
