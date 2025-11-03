@@ -21,7 +21,7 @@ MI_BLOG/
 
 Los archivos "analysis.ipynb", "clicksteam.csv" se subieron a Mediafire y la gráfica "top 10 usuarios por clics" está en el Drive.
 
-## Análisis con PySpark
+## Análisis con PySpark``
 
 El análisis de clics se desarrolló en **Python** utilizando la librería `pyspark` para procesar un dataset con registros simulados de navegación de usuarios.
 
@@ -33,6 +33,10 @@ from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName("ClickStreamAnalysis").getOrCreate()
 df = spark.read.csv("clickstream_data.csv", header=True, inferSchema=True)
 df.show(5)
+
+
+
+
 
 ### **2. Procesamiento en Ventanas (Streaming simulado)**
 
