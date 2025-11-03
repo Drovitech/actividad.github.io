@@ -8,9 +8,13 @@ Su propósito es analizar un flujo de clics simulados en una tienda online y doc
 ## Estructura del Proyecto
 
 MI_BLOG/
+   
    posts/
+     
      2025-10-29-analisis-flux-datos-spark.md
+   
    _config.yml
+   
    index.md
 
 ## NOTA
