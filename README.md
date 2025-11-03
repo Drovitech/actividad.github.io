@@ -31,7 +31,6 @@ df = spark.read.csv("clickstream_data.csv", header=True, inferSchema=True)
 df.show(5)
 
 ### **2. Procesamiento en Ventanas (Streaming simulado)**
-
 ```python
 import time
 from pyspark.sql.functions import col
