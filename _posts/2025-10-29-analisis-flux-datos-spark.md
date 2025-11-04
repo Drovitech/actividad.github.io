@@ -28,7 +28,12 @@ Se simuló una tienda online que registra clics de usuarios. El sistema recibe d
 
 ### 2. Carga del Dataset
 Usar un archivo CSV llamado `clickstream.csv` con 1000 registros simulados.
-[Descargar archivo CSV](https://drive.google.com/file/d/1VEjalIqFxVPOWisSyoLxlou_f2GwJWoL/view?usp=sharing)
+
+### Capturas de pantalla del dataset 
+
+[Ver captura de pantalla 1](https://drive.google.com/file/d/16LGaDuTfDenhww6Rf2z9p_C0Pa1BG6V7/view?usp=sharing)
+
+[Ver captura de pantalla 2](https://drive.google.com/file/d/10aIKhEvr57FjNbLyZTHekBjOHBjMscmC/view?usp=sharing)
 
 ### 3. Procesamiento con Spark Streaming (simulado)
 Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics por usuario.
