@@ -10,10 +10,6 @@ author: Alejandro Villoria
 Para el desarrollo de esta actividad se analiza un flujo de datos simulado de una tienda online que permite registrar los clics de los usuarios en tiempo real.  
 El objetivo es aplicar analítica avanzada con **Apache Spark** para procesar estos datos y detectar patrones de navegación, usando **Python y Jekyll** para documentar el proceso.
 
-NOTA: Se debe descargar el archivo "analysis.ipynb" y abrirlo en Google Colab para su correcta visualización y funcionamiento.
-
-[Descargar analysis.ipynb](https://drive.google.com/file/d/1e88hSoY6u6u0TOisbGzzsBxbyTztp1Xx/view?usp=sharing)
-
 ## Objetivo
 
 Aplicar analítica avanzada para procesar un flujo de datos simulado en un contexto empresarial usando Python y Spark, mostrando los resultados dentro de un blog construido con Jekyll.
