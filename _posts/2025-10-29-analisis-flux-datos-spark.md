@@ -12,7 +12,7 @@ El objetivo es aplicar analítica avanzada con **Apache Spark** para procesar es
 
 NOTA: Se debe descargar el archivo "analysis.ipynb" y abrirlo en Google Colab para su correcta visualización y ver su funcionamiento.
 
-[Descargar analysis.ipynb](https://download1654.mediafire.com/0qdd62x7zkngSLlq7gZmpp442cqW5oXA9zfpRs1rSse_rBLdgB9ngPkRXcZ5yHddNoML0dZMQ6iTvcoDvgCtbPz4nyxP2it1wHwNmb9wSduVhh7-kBImImR9VlFDEXoiBo60v1cs35eFUe0wsXDLr_ggnhA-IsXWF53yV6VkBKtnxg/z6dvelryuqofn4r/analysis.ipynb)
+[Descargar analysis.ipynb](https://drive.google.com/file/d/1e88hSoY6u6u0TOisbGzzsBxbyTztp1Xx/view?usp=sharing)
 
 ## Objetivo
 
@@ -27,8 +27,8 @@ Se simuló una tienda online que registra clics de usuarios. El sistema recibe d
 - `Clicks` (número de clics en el sitio)
 
 ### 2. Carga del Dataset
-Usar un archivo CSV llamado `clickstream_data.csv` con 1000 registros simulados.
-[Descargar archivo CSV](https://download1582.mediafire.com/rl59pci31s4g6_oVfWZgEZOIQiiOmyc3BJ8d0PCy8qL5Ca8kQdW5MRW8gX-w_9zs-PNqrHE9qGJYDQPJFolBj2q1ZzYI2UcMwdKhxqtj4hOH5DP8qBZdMgtj2lKYSI2E4HVOs-8LVCRi1ChbA1VAPePPSOn6A6-zlposXXs05keJxA/mb6hbphh9yvql24/clickstream.csv)
+Usar un archivo CSV llamado `clickstream.csv` con 1000 registros simulados.
+[Descargar archivo CSV](https://drive.google.com/file/d/1VEjalIqFxVPOWisSyoLxlou_f2GwJWoL/view?usp=sharing)
 
 ### 3. Procesamiento con Spark Streaming (simulado)
 Se simula un flujo de datos en ventanas de 1 minuto con el fin de contar clics por usuario.
